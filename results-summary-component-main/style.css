@@ -1,0 +1,88 @@
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  display: grid;
+  height: 100vh;
+  place-content: center;
+  font-family: "Hanken Grotesk", sans-serif;
+}
+.container {
+  display: grid;
+  grid-template-columns: repeat(2, 350px);
+  border-radius: 25px;
+  box-shadow: 44px 45px 50px -68px #4e21ca;
+}
+.resultCircle {
+  background: linear-gradient(
+    180deg,
+    rgba(120, 87, 255, 1) 35%,
+    rgba(46, 43, 233, 1) 100%
+  );
+  border-radius: 25px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.pointCircle {
+  border-radius: 50%;
+  background: linear-gradient(
+    180deg,
+    rgba(78, 33, 202, 1) 35%,
+    rgba(36, 33, 202, 0) 100%
+  );
+  width: 33%;
+
+  padding: 3em;
+}
+.pointDeclare {
+  color: white;
+  font-size: 2rem;
+}
+.resultTable {
+  padding: 1em 2em;
+  color: #303b5a;
+}
+.reactionContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 4em;
+  border-radius: 10px;
+  padding: 0.2em 1em;
+  font-weight: bold;
+}
+.subSummaryTitle {
+  display: flex;
+  align-items: center;
+}
+
+.hundredSpan {
+  opacity: 0.5;
+}
+.continueBtn {
+  width: 100%;
+  padding: 1em;
+  border-radius: 50px;
+  border: none;
+  background-color: #303b5a;
+  font-weight: bold;
+  color: white;
+  font-size: 1rem;
+  margin-top: 1em;
+  transition: all 0.3s;
+}
+.continueBtn:hover {
+  background: rgb(78, 33, 202);
+
+  transition: all 0.3s;
+}
+@media screen and (max-width:427px) {
+    body{
+        display: block;
+    }
+    .container{
+        grid-template-columns: 1fr;
+    }
+}
